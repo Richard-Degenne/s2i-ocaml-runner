@@ -12,7 +12,7 @@ MAINTAINER Richard Degenne <richdeg2@gmail.com>
 #      io.k8s.display-name="builder x.y.z" \
 #      io.openshift.expose-services="8080:http" \
 #      io.openshift.tags="builder,x.y.z,etc."
-LABEL io.openshift.s2i.scripts-url="/usr/libexec/s2i"
+LABEL io.openshift.s2i.scripts-url=image:///usr/libexec/s2i
 
 RUN adduser -D default
 USER default
